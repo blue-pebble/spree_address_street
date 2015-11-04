@@ -1,0 +1,5 @@
+nl:
+  spree:
+    street: Straat
+    number: Nummer
+    number_postfix: Toevoeging
