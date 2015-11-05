@@ -2,7 +2,7 @@ SpreeAddressStreet
 ==================
 
 An extension that changes the address behaviour so it uses the following
-fields in the front-end:
+fields in the front-end and backend:
 
 - street
 - number

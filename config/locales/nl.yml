@@ -1,5 +1,7 @@
 nl:
-  spree:
-    street: Straat
-    number: Nummer
-    number_postfix: Toevoeging
+  activerecord:
+    attributes:
+      spree/address:
+        street: Straat
+        number: Nummer
+        number_postfix: Toev.

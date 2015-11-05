@@ -1,14 +1,21 @@
 <% s_or_b = type.chars.first %>
 
 <div id="<%= type %>" data-hook="address_fields">
-  <div class="form-group <%= "#{type}-row" %>">
-    <%= f.label :firstname, Spree.t(:first_name) %>
-    <%= f.text_field :firstname, class: 'form-control' %>
-  </div>
+  <div class='row'>
 
-  <div class="form-group <%= "#{type}-row" %>">
-    <%= f.label :lastname, Spree.t(:last_name) %>
-    <%= f.text_field :lastname, class: 'form-control' %>
+    <div class='col-sm-5'>
+      <div class="form-group <%= "#{type}-row" %>">
+        <%= f.label :firstname, Spree.t(:first_name) %>
+        <%= f.text_field :firstname, class: 'form-control' %>
+      </div>
+    </div>
+
+    <div class='col-sm-7'>
+      <div class="form-group <%= "#{type}-row" %>">
+        <%= f.label :lastname, Spree.t(:last_name) %>
+        <%= f.text_field :lastname, class: 'form-control' %>
+      </div>
+    </div>
   </div>
 
   <% if Spree::Config[:company] %>
@@ -22,30 +29,25 @@
 
     <div class='col-sm-6'>
       <p class="form-group <%= "#{type}-row" %>" >
-        <%= f.label :street, Spree.t(:street) %><br />
+        <%= f.label :street %><br />
         <%= f.text_field :street, :class => 'form-control' %>
       </p>
     </div>
 
     <div class='col-sm-3'>
       <div class="form-group <%= "#{type}-row" %>" >
-        <%= f.label :number, Spree.t(:number) %><br />
+        <%= f.label :number %><br />
         <%= f.text_field :number, :class => 'form-control' %>
       </div>
     </div>
     <div class='col-sm-3'>
       <div class="form-group <%= "#{type}-row" %>" >
-        <%= f.label :number_postfix, Spree.t(:number_postfix) %><br />
+        <%= f.label :number_postfix %><br />
         <%= f.text_field :number_postfix, :class => 'form-control' %>
       </div>
     </div>
   </div>
 
-
-  <div class="form-group <%= "#{type}-row" %>">
-    <%= f.label :address2, Spree.t(:street_address_2) %>
-    <%= f.text_field :address2, class: 'form-control' %>
-  </div>
 
   <div class='row'>
 
