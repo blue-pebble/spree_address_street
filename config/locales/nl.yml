@@ -3,5 +3,5 @@ nl:
     attributes:
       spree/address:
         street: Straat
-        number: Nummer
+        number: Nr
         number_postfix: Toev.

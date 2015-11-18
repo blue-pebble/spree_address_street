@@ -38,13 +38,13 @@
     </div>
 
     <div class='col-sm-3'>
-      <div class="form-group" id=<%="#{address_id}address2" %>>
-        <%= form.label :number %><br />
-        <%= form.text_field :number, :class => 'form-control' %>
+      <div class="form-group" id=<%="#{address_id}number" %>>
+        <%= form.label :number %><span class="required">*</span><br />
+        <%= form.text_field :number, :class => 'form-control required' %>
       </div>
     </div>
     <div class='col-sm-3'>
-      <div class="form-group" id=<%="#{address_id}address2" %>>
+      <div class="form-group" id=<%="#{address_id}number_postfix" %>>
         <%= form.label :number_postfix %><br />
         <%= form.text_field :number_postfix, :class => 'form-control' %>
       </div>
