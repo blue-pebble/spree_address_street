@@ -1,4 +1,4 @@
-class AddStreetNumberFieldsToAddresses < ActiveRecord::Migration
+class AddStreetNumberFieldsToAddresses < ActiveRecord::Migration[5.1]
   def change
     change_table :spree_addresses do |t|
       t.string :street
