@@ -1,8 +1,12 @@
-# encoding: UTF-8
+lib = File.expand_path('../lib/', __FILE__)
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
+
+require 'spree_address_street/version'
+
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_address_street'
-  s.version     = '3.6.0'
+  s.version     = SpreeAddressStreet.version
   s.summary     = 'Street, number and number_postfix addresses'
   s.description = ''
   s.required_ruby_version = '>= 2.0.0'
