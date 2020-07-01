@@ -1,0 +1,21 @@
+Layout/LineLength:
+  Max: 120
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+# Missing top-level %s documentation comment is ok for simple classes
+Style/Documentation:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+# Style/FrozenStringLiteralComment:
+#   Enabled: false
+# Don't care about quotes
+# Style/StringLiterals:
+#   Enabled: false

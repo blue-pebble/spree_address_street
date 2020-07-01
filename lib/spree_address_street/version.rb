@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module SpreeAddressStreet
   module_function
 
@@ -8,8 +10,8 @@ module SpreeAddressStreet
   end
 
   module VERSION
-    MAJOR = 3
-    MINOR = 7
+    MAJOR = 4
+    MINOR = 0
     TINY  = 0
     PRE   = nil
 
